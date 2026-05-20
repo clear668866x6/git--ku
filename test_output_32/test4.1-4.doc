@@ -1,0 +1,29 @@
+--- [编译中端] 生成的四元式流 (Quadruples) ---
+0: (param, a, _, _)
+1: (call, input, 1, t1)
+2: (param, b, _, _)
+3: (call, input, 1, t2)
+4: (param, a, _, _)
+5: (param, b, _, _)
+6: (call, gcd, 2, t3)
+7: (=, t3, _, c)
+8: (param, c, _, _)
+9: (call, output, 1, t4)
+10: (return, 0, _, _)
+11: (J!=, y, 0, 14)
+12: (return, x, _, _)
+13: (J, _, _, 21)
+14: (param, y, _, _)
+15: (/, x, y, t5)
+16: (*, t5, y, t6)
+17: (-, x, t6, t7)
+18: (param, t7, _, _)
+19: (call, gcd, 2, t8)
+20: (return, t8, _, _)
+21: (return, 0, _, _)
+
+--- [编译后端] 解释器执行过程 ---
+Program output: Error: 未定义函数 'input'
+Error: 未定义函数 'input'
+Error: 未定义函数 'output'
+Return value: 0

@@ -1,0 +1,28 @@
+--- [编译中端] 生成的四元式流 (Quadruples) ---
+0: (read, _, _, t1)
+1: (=, t1, _, n)
+2: (J>, n, 0, 5)
+3: (=, 0, _, result)
+4: (J, _, _, 12)
+5: (J<=, n, 8, 9)
+6: (-, 0, 1, t2)
+7: (=, t2, _, result)
+8: (J, _, _, 12)
+9: (param, n, _, _)
+10: (call, factor, 1, t3)
+11: (=, t3, _, result)
+12: (write, result, _, _)
+13: (return, result, _, _)
+14: (J>, m, 1, 17)
+15: (=, 1, _, fa)
+16: (J, _, _, 22)
+17: (-, m, 1, t4)
+18: (param, t4, _, _)
+19: (call, factor, 1, t5)
+20: (*, m, t5, t6)
+21: (=, t6, _, fa)
+22: (return, fa, _, _)
+
+--- [编译后端] 解释器执行过程 ---
+Program output: 120
+Return value: 120
